@@ -5,60 +5,84 @@ body{
      font-family: 'Roboto', sans-serif;
 }
  .navigation {
-     height: 55px;
+     height: 110px;
      background: linear-gradient(45deg, #0a1847, hsl(212, 49%, 35%));
 }
  .brand {
      position: absolute;
-     padding-left: 20px;
      float: left;
      line-height: 55px;
-     text-transform: uppercase;
-     font-size: 1.4em;
+     padding-top: 18px;
+         
 }
- .brand a, .brand a:visited {
-     color: #ffffff;
-     text-decoration: none;
+  .brand img {
+    height: 80px;
+    width: auto;
+    
 }
- .nav-container {
-     max-width: 1000px;
-     margin: 0 auto;
+
+ .nav-container { 
+    max-width: 1100px;
+    margin: 0 auto;
+   
 }
  nav {
-     float: right;
+    float: right;
+    padding-top: 2%;
+    
 }
+ 
  nav ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
 }
  nav ul li {
-     float: left;
-     position: relative;
+    float: left;
+    position: relative;
+   
 }
  nav ul li a,nav ul li a:visited {
-     display: block;
-     padding: 0 20px;
-     line-height: 55px;
-     color: #fff;
-     background: #262626 ;
-     text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    line-height: 55px;
+    color: #fff;
+    
+    text-decoration: none;
 }
- nav ul li a{
-     background: transparent;
-     color: #FFF;
+nav ul li a{
+    background: transparent;
+    color: #FFF;
 }
- nav ul li a:hover, nav ul li a:visited:hover {
-     background: #2581DC;
-     color: #ffffff;
+  nav ul li a:hover, nav ul li a:visited:hover {
+    background: #2581DC;
+    color: #ffffff;
+    
+}
+  nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+ nav ul li: hover > ul {
+    display: block;
+}
+ nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
 }
  .navbar-dropdown li a{
-     background: #2581DC;
+    background: #2581DC;
 }
  nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
      padding-left: 4px;
      content: ' \025BE';
 }
+
+ 
  nav ul li ul li {
      min-width: 190px;
 }
@@ -72,7 +96,8 @@ body{
      z-index: 1;
      background: #fff;
      box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
-}
+} 
+
 /* Mobile navigation */
  .nav-mobile {
      display: none;
@@ -148,5 +173,7 @@ body{
 }
  #navbar-toggle.active span:after {
      transform: rotate(-45deg);
-}
-}
+} 
+} 
+
+
